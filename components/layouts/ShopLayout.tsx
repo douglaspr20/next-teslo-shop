@@ -46,6 +46,7 @@ export const ShopLayout: FC<Props> = ({
           margin: "80px auto",
           maxWidth: "1440px",
           padding: "0px 30px",
+          minHeight: "67vh",
         }}
       >
         {children}
@@ -55,8 +56,7 @@ export const ShopLayout: FC<Props> = ({
       <footer
         style={{
           // background: "red",
-          // position: "fixed",
-          // bottom: 0,
+          marginTop: "auto",
           width: "100%",
           padding: "0px 30px",
         }}
