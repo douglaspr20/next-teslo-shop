@@ -8,7 +8,7 @@ import { SWRConfig } from "swr";
 import { lightTheme } from "../themes";
 import { AuthProvider, CartProvider, UiProvider } from "../context";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
   return (
     <SessionProvider>
       <PayPalScriptProvider
@@ -27,7 +27,9 @@ function MyApp({ Component, pageProps }: AppProps) {
               <UiProvider>
                 <ThemeProvider theme={lightTheme}>
                   <CssBaseline />
-                  <Component {...pageProps} />
+                  <>
+                    <Component {...pageProps} />
+                  </>
                 </ThemeProvider>
               </UiProvider>
             </CartProvider>
