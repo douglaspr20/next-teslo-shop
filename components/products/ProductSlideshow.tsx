@@ -8,7 +8,7 @@ interface Props {
   images: string[];
 }
 
-export const ProductSlideshow: FC<Props> = ({ images }) => {
+export const ProductSlideshow: FC<Props> = ({ images }): JSX.Element => {
   return (
     <Slide easing="ease" duration={7000} indicators>
       {images.map((image) => {
