@@ -20,7 +20,7 @@ yarn dev
 
 ## To get the seed data request the next url
 
-Llamara:
+call:
 ```
 http://localhost:3000/api/seed
 ```
